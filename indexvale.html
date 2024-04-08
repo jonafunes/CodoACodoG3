@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Energy - Terapias Holísticas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Tus estilos CSS aquí */
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>
+        <!-- Logo con la URL especificada -->
+            <img src="IMAGEN\LOGO.png" alt="Logo" width="130">
+            <h1>Light Energy - Terapias Holísticas</h1>
+            
+        </div>
+            
+   </nav>
+</header>
+
+<!-- Sección de selección en el costado izquierdo -->
+<div class="side-selection">
+     <ul>
+        <li>
+            <a href="./templates/buscar.html">Buscar</a>
+        </li>
+        <li>
+            <a href="./templates/compras.html">Carrito de compras</a>
+        </li>
+        <li>
+            <a href="./templates/register.html">Usuario</a>
+        </li>
+    </ul>    
+</div>
+
+<div class="container">
+    <div class="decorative-line"></div>
+    <div class="side-buttons">
+        <button class="btn" onclick="openPopup('limpieza')">Limpieza Energética</button>
+        <button class="btn" onclick="openPopup('tarot')">Tarot</button>
+        <button class="btn" onclick="openPopup('velas')">Velas Aromáticas</button>
+    </div>
+</div>
+
+<div id="limpieza-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('limpieza')">&times;</span>
+        <h2 style="color: #F3CA68;">Limpieza Energética</h2>
+        <img src="IMAGEN/pendulo hebreo.img" alt="Imagen" width="500">
+        
+        <h3>La sesión de Limpieza energética es a distancia y
+             tiene el fin de limpiar, cortar y liberar cualquier 
+             energía negativa que estés cargando en tus cuerpos 
+             mental, emocional, físico o etérico. Se realiza una 
+             armonización y desbloqueo en los chakras y se trabaja 
+             en el aura reparando y fortaleciendo. Al eliminar muchos 
+             bloqueos de la persona, se suele conseguir trabajo si estaba 
+             costando… mejorar en ámbitos familiares, de pareja, básicamente 
+             todo lo ENERGÉTICO se libera y comienza a estar mejor.</h3>
+        <h3>La sesión la hago solo por la noche cuando tú estés durmiendo o 
+            estés relajado/a acostado/a. También recomiendo escuchar una 
+            meditación guiada para poder estar más relajado/a y ayudar a 
+            la limpieza, lo envío cuando pactamos turno. Luego al día 
+            siguiente se envía un PDF con el informe final, explicando 
+            cómo estabas y con herramientas para acompañar la limpieza.</h3>
+        <h3>Para poder seguir con la misma te pido que me envíes comprobante 
+            de pago, y nombre completo y fecha de nacimiento de la persona o
+             las personas que van a recibir el servicio (el servicio es individual,
+              pero puedes contratarlo para otra persona).</h3>
+    </div>
+</div>
+
+<div id="tarot-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('tarot')">&times;</span>
+        <h2 style="color: #F3CA68;">Tarot</h2>
+        <button class="btn" onclick="openPopup('pregunta-concreta')">Pregunta Concreta</button>
+        <button class="btn" onclick="openPopup('pregunta-general')">Pregunta General</button>
+    </div>
+</div>
+
+
+<div id="velas" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('tarot')">&times;</span>
+        <h2 style="color: #F3CA68;">Tarot</h2>
+        <button class="btn" onclick="openPopup('Caramaelera1')">Caramelera Negra </button>
+        <button class="btn" onclick="openPopup('Caramaelera2')">Caramelera Transparente  </button>
+    </div>
+</div>
+<!-- Agrega más ventanas emergentes según sea necesario -->
+
+<script>
+    // Función para abrir la ventana emergente correspondiente
+    function openPopup(popupId) {
+        var popup = document.getElementById(popupId + '-popup');
+        popup.style.display = 'block';
+    }
+
+    // Función para cerrar la ventana emergente
+    function closePopup(popupId) {
+        var popup = document.getElementById(popupId + '-popup');
+        popup.style.display = 'none';
+    }
+
+    // Funciones adicionales según sea necesario
+
+    function showSearch() {
+        // Implementa la lógica para mostrar la barra de búsqueda
+        alert("Función de búsqueda aún no implementada");
+    }
+
+    function showLogin() {
+        // Implementa la lógica para mostrar la ventana de inicio de sesión
+        alert("Función de inicio de sesión aún no implementada");
+    }
+</script>
+
+</body>
+</html>

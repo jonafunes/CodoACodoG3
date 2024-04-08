@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Energy - Terapias Holísticas - Pago</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Light Energy - Terapias Holísticas</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Pago</h2>
+            <form action="#" method="GET">
+                <div>
+                    <label for="">Nombre/s y Apellido/s</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Por favor ingrese los datos como figuran en la tarjeta"required >
+                     
+                </div>
+                <br>
+                <div>
+                    <label for="">DNI</label>
+                    <input type="text" name="dni" id="dni" maxlength="8" required>
+                </div>
+                <br>
+                <div>
+                    <label for="">Tarjeta</label>
+                    <select name="tarjeta" id="tarjeta" required>
+                        <option value="">Seleccione</option>
+                        <option value="VI">VISA</option>
+                        <option value="MA">MASTERCARD</option>
+                        <option value="CA">CABAL</option>
+                        <option value="AE">AMERICAN EXPRESS</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="">Número de Tarjeta</label>
+                    <input type="text" name="tnumber" id="tnumber" maxlength="16" required>
+                </div>
+                <br>
+                <div>
+                    <label for="cdate">Fecha de Vencimiento</label>
+                    <input type="date" name="cdate" id="cdate">
+                </div>                
+                <br>
+                <br>
+                <div>
+                    <label for="">Código de Seguridad</label>
+                    <input type="password" name="scode" id="scode">
+                </div>
+                <br>
+                <div>
+                   <ul>
+                     <li>
+                        <a href="">Envío a Domicilio</a>
+                     </li>
+                     <li>
+                         <a href="">Retiro en Local</a>
+                     </li>
+                </div>
+                
+                
+                
+                <!-- boton de envio 
+                <input type="submit" value="Registrarse">-->
+                <button type="submit">
+                     Pagar
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
