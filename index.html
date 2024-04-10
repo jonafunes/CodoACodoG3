@@ -178,19 +178,35 @@
         popup.style.display = 'none';
     }
 
-      
+    // Funciones adicionales según sea necesario
 
+    
  
         // Función para expandir el marco al pasar el cursor sobre el botón de usuario
-        function expandFrame() {
+    function expandFrame() {
             document.querySelector('.user-frame').style.width = '5px'; // Cambia el ancho del marco
         }
+
+
+
+         // Función para mostrar el formulario de registro
+    function showRegisterForm() {
+        document.getElementById('register-form').style.display = 'block';
+        document.getElementById('login-form').style.display = 'none';
+    }
+
+    // Función para mostrar el formulario de inicio de sesión
+    function showLoginForm() {
+        document.getElementById('login-form').style.display = 'block';
+        document.getElementById('register-form').style.display = 'none';
+    }
+
 
         // Función para colapsar el marco al quitar el cursor del botón de usuario
         function collapseFrame() {
             document.querySelector('.user-frame').style.width = '0'; // Restaura el ancho del marco
         }
-    </script>
+    </script>>
  
 
 
