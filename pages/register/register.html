@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <form class="my-form">
+        <div class="login-welcome-row">
+            <a href="#" title="Logo">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+            </a>
+            <h1>Bienvenido &#x1F44F;</h1>
+            <p>Por favor ingrese sus datos!</p>
+        </div>
+        <div class="input__wrapper">
+            <input type="text" id="name" name="name" class="input__field" placeholder="Your Name" required autocomplete="off">
+            <label for="name" class="input__label">Nombre:</label>
+        </div>
+        <div class="input__wrapper">
+            <input type="text" id="lastname" name="lastname" class="input__field" placeholder="Your Lastname" required autocomplete="off">
+            <label for="lastname" class="input__label">Apellido:</label>
+            </svg>
+        </div>
+        <div class="input__wrapper">
+            <input type="email" id="email" name="email" class="input__field" placeholder="Your Email" required autocomplete="off">
+            <label for="email" class="input__label">Email:</label>
+        </div>
+        <div class="input__wrapper">
+            <input id="password" type="password" class="input__field" placeholder="Su contraseña"
+                title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required autocomplete="off">
+            <label for="password" class="input__label">
+                Password
+            </label>
+        </div>
+        <button type="submit" class="my-form__button">
+            Register
+        </button>
+        <div class="my-form__actions">
+            <div class="my-form__row">
+                <span>¿Ya tiene cuenta?</span>
+                <a href="#" title="Create Account">
+                    ¡Ingrese!
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <script src="register.js"></script>
+</body>
+
+</html>
