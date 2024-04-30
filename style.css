@@ -14,10 +14,37 @@ body {
     animation: moveShine 4s linear infinite; /* Animación de los destellos */
 }
 
-a { text-decoration: none;
-color:#312444
+a { 
+    text-decoration: none;
+    color:#312444;
 }
 
+h2 {   
+    margin: 15px;
+    text-align: center;
+}
+h3 {   
+    margin: 15px;
+}
+
+.icono{
+    fill: currentColor
+}
+.limpiezaEnergetica {   
+    display: grid;
+    grid-template-columns: 52% 45% 3%;
+    grid-template-rows: 50 px 500px 600px;
+}
+.limpieza1 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.limpieza2 {
+    grid-column: 1;
+}
+.limpieza3 {
+    grid-column: 2;
+}
 footer {   
     background-color: #312444;
     text-align: center;
@@ -27,6 +54,42 @@ footer {
     color: #F3CA68; /* Color dorado */
     font-family: "Higuen Elegant Serif", serif; /* Fuente para los títulos */
     padding: 20px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-style: bold;
+  
+}
+    
+span {
+    padding: 35px;   
+}
+
+/* estilos de CSS */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 /* Animación para mover los destellos */
@@ -45,96 +108,23 @@ header {
     text-align: center;
     padding: 20px;body {
 
-        background-color: rgb(228, 11, 174);
-        /* Resto de los estilos para el cuerpo */
-    
-        /* Fondo con destellos dorados */
-        background: linear-gradient(90deg, rgba(165, 201, 111, 0) 50%, rgba(255, 255, 255, 0.3) 50%),
-                    linear-gradient(-45deg, rgba(1648, 12, 12, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(203, 205, 230, 0.062) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3)),
-                    linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(231, 215, 215, 0.164) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
-        background-size: 100px 100px, 100px 100px, 100px 100px; /* Tamaño de los destellos */
-        animation: moveShine 4s linear infinite; /* Animación de los destellos */
+    background-color: rgb(228, 11, 174);
+    /* Resto de los estilos para el cuerpo */
+
+    /* Fondo con destellos dorados */
+    background: linear-gradient(90deg, rgba(165, 201, 111, 0) 50%, rgba(255, 255, 255, 0.3) 50%),
+                linear-gradient(-45deg, rgba(1648, 12, 12, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(203, 205, 230, 0.062) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3)),
+                linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(231, 215, 215, 0.164) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+    background-size: 100px 100px, 100px 100px, 100px 100px; /* Tamaño de los destellos */
+    animation: moveShine 4s linear infinite; /* Animación de los destellos */
     }
     
     a { text-decoration: none;
     color:#312444
     }
+ 
     
-    
-    
-    /* Animación para mover los destellos */
-    @keyframes moveShine {
-        0% {
-            background-position: 0 0, 0 0, 0 0; /* Ajuste a la posición inicial */
-        }
-        100% {
-            background-position: 100px 100px, 100px 100px, 100px 100px; /* Ajuste a la posición final */
-        }
-    }
-    header {
-        font-family: "Higuen Elegant Serif", serif; /* Fuente para los títulos */
-        background-color: #312444;
-        padding: 20px;
-        color: #F3CA68; /* Color dorado */
-        text-align: center;
-    }
-    
-    .logo {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 125px;
-        height: auto;
-    }
-    
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .decorative-line {
-        width: 100%;
-        height: 1px;
-        background-color: #F3CA68; /* Color dorado */
-        margin: 20px 0;
-    }
-    
-    .side-buttons {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .btn {
-        font-size: 16px; /* Tamaño de fuente */
-        background-color: #312444;
-        color: rgb(243, 202, 104); /* Color dorado */
-        border: none;
-        padding: 15px 25px;
-        margin: 5px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease; 
-        /* Transiciones para el color de fondo y texto */
-    }
-    
-    .btn:hover {
-        background-color: rgb(243, 202, 104); /* Cambio a color dorado al pasar el mouse */
-        color: #270e4b; /* Cambio a color oscuro para el texto */
-    }
-    
-    .popup {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 10;
-        top: 10;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(49, 36, 68, 0.8); /* Cambio de color de fondo */
-    }
+
 
     /* Estilos para el marco del botón de usuario */
 .user-frame {
@@ -170,232 +160,39 @@ header {
 }
 
 
-    .popup-content {
+
+.btn {
+    /* Resto de los estilos para los botones */
     
-    
-        /* Resto de los estilos para el contenido emergente */
-    
-        display: flex;
-        flex-direction: column; /* Direccion de los botones, columna */
-    }
-    
-    .btn {
-        /* Resto de los estilos para los botones */
-        
-        display: block; /* Para que los botones ocupen todo el ancho */
-        width: 100%; /* Ancho completo */
-    }
-    .popup-content {
-        background: linear-gradient(to bottom, #312440, #1A0E24); /* Degradado de color */
-        color: rgb(243, 202, 104); /* Color dorado */
-        margin: 10% auto;
-        padding: 20px;
-        border: 1.3px solid rgb(243, 202, 104); /* Borde en color dorado  */
-        width: 75%;
-        border-radius: 8px;
-    }
-    
-    .close {
-        color: rgb(170, 170, 170);
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    .side-selection {
-        position: fixed;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100px;
-        background-color: rgba(255, 255, 255, 0.7);
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding: 10px;
-        z-index: 1000;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-      
-    .side-selection img {
-        display: block;
-        width: 44px;
-        height: auto;
-        margin-bottom: 25px;
-        cursor: pointer;
-        border-radius: 100px;
-        transition: transform 0.9s ease;
-    }
-    
-    .side-selection img:hover {
-        transform: scale(1.02);
-    }
-    
-    body {
-        background-color: #F3C;
-        
-        /* Resto de tus estilos para el cuerpo */
-    
-        /* Fondo con destellos dorados */
-        background: linear-gradient(90deg, rgba(165, 201, 111, 0) 50%, rgba(255, 255, 255, 0.3) 50%),
-                    linear-gradient(-45deg, rgba(1648, 12, 12, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(203, 205, 230, 0.062) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3)),
-                    linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(231, 215, 215, 0.164) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
-        background-size: 100px 100px, 100px 100px, 100px 100px; /* Tamaño de los destellos */
-        animation: moveShine 4s linear infinite; /* Animación de los destellos */
-    }
-    
-    a { text-decoration: none;
-    color:#312444
-    }
-    
-    
-    /* Estilos para la barra de búsqueda */
-.search-container {
-    position: relative;
-    display: inline-block;
-    margin-top: 200px; /* Ajusta el margen según sea necesario */
+    display: block; /* Para que los botones ocupen todo el ancho */
+    width: 100%; /* Ancho completo */
+}
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #312440, #1A0E24); /* Degradado de color */
+    color: rgb(243, 202, 104); /* Color dorado */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1.3px solid #f3ca68; /* Borde en color dorado  */
+    width: 75%;
+    border-radius: 8px;
 }
 
-.search-input {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    width: 200px;
+.close {
+    color: rgb(170, 170, 170);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.search-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
 }
-
-    /* Animación para mover los destellos */
-    @keyframes moveShine {
-        0% {
-            background-position: 0 0, 0 0, 0 0; /* Ajusta la posición inicial */
-        }
-        100% {
-            background-position: 100px 100px, 100px 100px, 100px 100px; /* Ajusta la posición final */
-        }
-    }
-    header {
-        font-family: "Higuen Elegant Serif", serif; /* Fuente para los títulos */
-        background-color: #312444;
-        padding: 20px;
-        color: #F3CA68; /* Color dorado */
-        text-align: center;
-    }
-    
-    .logo {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 125px;
-        height: auto;
-    }
-    
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .decorative-line {
-        width: 100%;
-        height: 1px;
-        background-color: #F3CA68; /* Color dorado */
-        margin: 20px 0;
-    }
-    
-    .side-buttons {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .btn {
-        font-size: 16px; /* Tamaño de fuente deseado */
-        background-color: #312444;
-        color: rgb(243, 202, 104); /* Color dorado */
-        border: none;
-        padding: 15px 25px;
-        margin: 5px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease; 
-        /* Transiciones para el color de fondo y texto */
-    }
-    
-    .btn:hover {
-        background-color: rgb(243, 202, 104); /* Cambio a color dorado al pasar el mouse */
-        color: #270e4b; /* Cambio a color oscuro para el texto */
-    }
-    
-    .popup {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 10;
-        top: 10;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(49, 36, 68, 0.8); /* Cambio de color de fondo */
-    }
-    .popup-content {
-    
-    
-        /* Estilos para el contenido emergente */
-    
-        display: flex;
-        flex-direction: column; /* Botones: en columna */
-    }
-    
-    .btn {
-
-
-        /* Otros estilos para los botones */
-        
-        display: block; /* Para que los botones ocupen todo el ancho */
-        width: 100%; /* Ancho completo */
-    }
-    .popup-content {
-        background: linear-gradient(to bottom, #312440, #1A0E24); /* Degradado de color */
-        color: rgb(243, 202, 104); /* Color dorado */
-        margin: 10% auto;
-        padding: 20px;
-        border: 1.3px solid rgb(243, 202, 104); /* Borde en color dorado  */
-        width: 75%;
-        border-radius: 8px;
-    }
-    
-    .close {
-        color: rgb(170, 170, 170);
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    .side-selection {
+ /*   .side-selection { ESTA PARTE DEL CODIGO NO ESTA FUNCIONANDO 
         position: fixed;
         top: 50%;
         left: 0;
@@ -407,8 +204,9 @@ header {
         padding: 10px;
         z-index: 1000;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
     }
-      
+        
     .side-selection img {
         display: block;
         width: 44px;
@@ -418,13 +216,178 @@ header {
         border-radius: 100px;
         transition: transform 0.9s ease;
     }
-    
+
     .side-selection img:hover {
         transform: scale(1.02);
+    } */
+
+body {
+    background-color: #F3C;
+    
+    
+
+    /* Fondo con destellos dorados */
+    background: linear-gradient(90deg, rgba(165, 201, 111, 0) 50%, rgba(255, 255, 255, 0.3) 50%),
+                linear-gradient(-45deg, rgba(1648, 12, 12, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(203, 205, 230, 0.062) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3)),
+                linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.3) 25%, rgba(231, 215, 215, 0.164) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+    background-size: 100px 100px, 100px 100px, 100px 100px; /* Tamaño de los destellos */
+    animation: moveShine 4s linear infinite; /* Animación de los destellos */
+}
+
+a { text-decoration: none;
+color:#312444
+}
+
+
+    /* Estilos para la barra de búsqueda ESTA PARTe DEL CODIGO NO ENCUENTRO DONDE FUNCIOONA 
+        search-container {
+        position: relative;
+        display: inline-block;
+        margin-top: 200px; 
     }
+
+    .search-input {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .search-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    } 
+    */ 
+
+/* Animación para mover los destellos */
+@keyframes moveShine {
+    0% {
+        background-position: 0 0, 0 0, 0 0; /* Ajusta la posición inicial */
+    }
+    100% {
+        background-position: 100px 100px, 100px 100px, 100px 100px; /* Ajusta la posición final */
+    }
+}
+header {
+    font-family: "Higuen Elegant Serif", serif; /* Fuente para los títulos */
+    background-color: #312444;
+    padding: 20px;
+    color: #F3CA68; /* Color dorado */
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 125px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.decorative-line {
+    width: 100%;
+    height: 1px;
+    background-color: #F3CA68; /* Color dorado */
+    margin: 20px 0;
+}
+
+.side-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    font-size: 16px; /* Tamaño de fuente deseado */
+    background-color: #312444;
+    color: rgb(243, 202, 104); /* Color dorado */
+    border: none;
+    padding: 15px 25px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    /* Transiciones para el color de fondo y texto */
+}
+.btn:hover {
+    background-color: rgb(243, 202, 104); /* Cambio a color dorado al pasar el mouse */
+    color: #270e4b; /* Cambio a color oscuro para el texto */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 10;
+    top: 10;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(49, 36, 68, 0.8); /* Cambio de color de fondo */
+}
+
+}
+
+.btn {
+    /* Otros estilos para los botones */
+    display: block; /* Para que los botones ocupen todo el ancho */
+    width: 100%; /* Ancho completo */
+}
+
+.close {
+    color: rgb(170, 170, 170);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.side-selection {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
     
-        
-    
+.side-selection img {
+    display: block;
+    width: 44px;
+    height: auto;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: transform 0.9s ease;
+}
+
+.side-selection img:hover {
+    transform: scale(1.02);
 }
 
 .logo {
@@ -508,6 +471,7 @@ header {
     border: 1.3px solid rgb(243, 202, 104); /* Borde en color dorado  */
     width: 75%;
     border-radius: 8px;
+   
 }
 
 .close {
@@ -523,33 +487,6 @@ header {
     text-decoration: none;
     cursor: pointer;
 }
-.side-selection {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 10px;
-    z-index: 1000;
-}
-     
-  
-.side-selection img {
-    display: block;
-    width: 44px;
-    height: auto;
-    margin-bottom: 25px;
-    cursor: pointer;
-    border-radius: 100px;
-    transition: transform 0.9s ease;
-}
-
-.side-selection img:hover {
-    transform: scale(1.02);
-}
 
 .containerRegister {
     display: flex;
@@ -560,7 +497,7 @@ header {
 .cardRegister {
     width: 400px;
     background: linear-gradient(#212121, #212121) padding-box,
-              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
     padding: 32px 24px;
     font-size: 14px;
