@@ -41,7 +41,7 @@
 
 <header>
     <!-- Logo con la URL especificada -->
-    <img src="IMAGEN\LOGO.png" alt="Logo" width="130">
+    <img src="IMAGEN/LOGO.png" alt="Logo" width="130">
     <h1>Light Energy - Terapias Holísticas</h1>
 </header>
 
@@ -114,7 +114,7 @@
     <div class="popup-content">
         <span class="close" onclick="closePopup('limpieza')">&times;</span>
         <h2 style="color: #F3CA68;">Limpieza Energética</h2>
-        <img src="IMAGEN/pendulo hebreo.img" alt="Imagen" width="500">
+        <img src="IMAGEN/blogpendulomertulet2.jpg" alt="Imagen" width="500">
         
         <h3>La sesión de Limpieza energética es a distancia y
              tiene el fin de limpiar, cortar y liberar cualquier 
@@ -135,6 +135,9 @@
             de pago, y nombre completo y fecha de nacimiento de la persona o
              las personas que van a recibir el servicio (el servicio es individual,
               pero puedes contratarlo para otra persona).</h3>
+    
+        <button class="btn" onclick="openPopup('pregunta-concreta')">Enviar datos</button>
+          <a href="../LimpiezaE/Limpiezaener.html"></a>
     </div>
 </div>
 
@@ -143,6 +146,7 @@
         <span class="close" onclick="closePopup('tarot')">&times;</span>
         <h2 style="color: #F3CA68;">Tarot</h2>
         <button class="btn" onclick="openPopup('pregunta-concreta')">Pregunta Concreta</button>
+          <a href="./Templates/Tarot1.html"></a>
         <button class="btn" onclick="openPopup('pregunta-general')">Pregunta General</button>
     </div>
 </div>
@@ -157,8 +161,10 @@
 
          <!-- selecciones de carameleras  -->
         <button class="btn" onclick="openPopup('Caramaelera1')">Caramelera Negra</button>
-        <img src=""
+        <img src="./IMAGEN/caramelera 1.jpg">
         <button class="btn" onclick="openPopup('Caramaelera2')">Caramelera Transparente</button>
+        <img src="./IMAGEN/caramelera_negra_2.jpg">
+
     </div>
 </div>
 <!-- Agrega más ventanas emergentes según sea necesario -->
@@ -180,33 +186,27 @@
 
     // Funciones adicionales según sea necesario
 
-    
+    function showSearch() {
+        // Implementa la lógica para mostrar la barra de búsqueda
+        alert("Función de búsqueda aún no implementada");
+    }
+
+    function showLogin() {
+        // Implementa la lógica para mostrar la ventana de inicio de sesión
+        alert("Función de inicio de sesión aún no implementada");
+    }
+
  
         // Función para expandir el marco al pasar el cursor sobre el botón de usuario
-    function expandFrame() {
+        function expandFrame() {
             document.querySelector('.user-frame').style.width = '5px'; // Cambia el ancho del marco
         }
-
-
-
-         // Función para mostrar el formulario de registro
-    function showRegisterForm() {
-        document.getElementById('register-form').style.display = 'block';
-        document.getElementById('login-form').style.display = 'none';
-    }
-
-    // Función para mostrar el formulario de inicio de sesión
-    function showLoginForm() {
-        document.getElementById('login-form').style.display = 'block';
-        document.getElementById('register-form').style.display = 'none';
-    }
-
 
         // Función para colapsar el marco al quitar el cursor del botón de usuario
         function collapseFrame() {
             document.querySelector('.user-frame').style.width = '0'; // Restaura el ancho del marco
         }
-    </script>>
+    </script>
  
 
 
