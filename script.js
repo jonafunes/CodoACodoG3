@@ -49,3 +49,12 @@ function showLogin() {
     alert("Función de inicio de sesión aún no implementada");
 }
  
+
+
+// Aqui inserto modificaciónes de JS basadas en las clases de CaC
+//declaraciones de variables
+var variable2;
+let variable1;
+const ENMAYUSCULA = valorinvariable;
+let parrafo = document.querySelector ('#parrafo') // selecciona del html el elemento que marco
+parrafo.innerHTML = 'hola lo estoy modificando desde js'
