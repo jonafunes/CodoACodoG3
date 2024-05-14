@@ -59,6 +59,7 @@ footer {
 .subtitulo {
     font-size: 20px;
     font-style: bold;
+    color: #F3CA68; 
   
 }
     
@@ -66,7 +67,24 @@ span {
     padding: 35px;   
 }
 
-/* estilos de CSS */
+.carameleras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.aclaradores {
+    margin: 25px;
+    padding: 35px    ;
+}
+
 .search-container {
     position: relative;
     display: inline-block;
@@ -192,34 +210,6 @@ header {
     text-decoration: none;
     cursor: pointer;
 }
- /*   .side-selection { ESTA PARTE DEL CODIGO NO ESTA FUNCIONANDO 
-        position: fixed;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100px;
-        background-color: rgba(255, 255, 255, 0.7);
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding: 10px;
-        z-index: 1000;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        
-    }
-        
-    .side-selection img {
-        display: block;
-        width: 44px;
-        height: auto;
-        margin-bottom: 25px;
-        cursor: pointer;
-        border-radius: 100px;
-        transition: transform 0.9s ease;
-    }
-
-    .side-selection img:hover {
-        transform: scale(1.02);
-    } */
 
 body {
     background-color: #F3C;
@@ -238,35 +228,6 @@ a { text-decoration: none;
 color:#312444
 }
 
-
-    /* Estilos para la barra de búsqueda ESTA PARTe DEL CODIGO NO ENCUENTRO DONDE FUNCIOONA 
-        search-container {
-        position: relative;
-        display: inline-block;
-        margin-top: 200px; 
-    }
-
-    .search-input {
-        padding: 8px 12px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-        width: 200px;
-    }
-
-    .search-button {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 8px 12px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 14px;
-    } 
-    */ 
 
 /* Animación para mover los destellos */
 @keyframes moveShine {
