@@ -1,3 +1,4 @@
+
 // Función para expandir el marco al pasar el cursor sobre el botón de usuario
 function expandFrame() {
     document.querySelector('.user-frame').style.width = '5px'; // Cambia el ancho del marco
@@ -8,11 +9,7 @@ function collapseFrame() {
     document.querySelector('.user-frame').style.width = '0'; // Restaura el ancho del marco
 }
 
-// Función para iniciar sesión
-function login() {
-    alert("Función de inicio de sesión aún no implementada");
-    // Aquí puedes agregar la lógica para el inicio de sesión
-}
+
 // Función para abrir la ventana emergente correspondiente
 function openPopup(popupId) {
     var popup = document.getElementById(popupId + '-popup');
@@ -40,21 +37,31 @@ function resetButtonColor(btnId, originalColor) {
  
 
 function showSearch() {
+    try {
+        // Intenta redirigir al usuario a la página de inicio de sesión en tu repositorio
+        window.location.href = "pages/search.html" //pagina de servicios de busqueda no realizada aun.
+    } catch(error) {
     // Implementa la lógica para mostrar la barra de búsqueda
     alert("Función de búsqueda aún no implementada");
 }
+}
 
 function showLogin() {
-    // Implementa la lógica para mostrar la ventana de inicio de sesión
-    alert("Función de inicio de sesión aún no implementada");
+    try {
+    // Intenta redirigir al usuario a la página de inicio de sesión en tu repositorio
+        window.location.href = "pages/login/login.html"
+    } catch(error) {
+        // Si hay un error al intentar redirigir, muestra una alerta
+        alert("No se pudo abrir la página de inicio de sesión: " + error);
+    }
 }
- 
 
-
-// Aqui inserto modificaciónes de JS basadas en las clases de CaC
-//declaraciones de variables
-var variable2;
-let variable1;
-const ENMAYUSCULA = valorinvariable;
-let parrafo = document.querySelector ('#parrafo') // selecciona del html el elemento que marco
-parrafo.innerHTML = 'hola lo estoy modificando desde js'
+function showChart() {
+    try {
+    // Intenta redirigir al usuario a la página de inicio de sesión en tu repositorio
+        window.location.href = "Templates/compras.html"
+    } catch(error) {
+        // Si hay un error al intentar redirigir, muestra una alerta
+        alert("No se pudo abrir la página de compras: " + error);
+    }
+}

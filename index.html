@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="icon" href="/IMAGEN/LOGO.png" type="image/png">
 
 </head>
 
 <body>
     <header id="volverArriba">
         <!-- URL al logo -->
-        <img src="IMAGEN\LOGO.png" alt="Logo" width="130">
+        <img src="/IMAGEN/ImagenlogoR.jpg" alt="Logo" width="130">
         <h1>Light Energy - Terapias Holísticas</h1>
     </header>
 
@@ -33,9 +34,9 @@
         </div>
         <div class="seccion izq principal">
             <div class="seccion secundaria">
-                <div class="tercera seccion">
+                <div class="tercera seccion" onclick= "showChart()" >
                     <i class="fi fi-rr-shopping-cart icono"></i>
-                    <a href="#" onclick="showCart()"><i class="Carrito"></i></a>
+                    <!-- A realizar todavia <a href="#" onclick="showCart()"><i class="Carrito"></i></a> -->
                 </div>
             </div>
         </div>
@@ -62,9 +63,12 @@
     <div class="container">
         <div class="decorative-line"></div>
         <div class="side-buttons">
-            <a href="#seccionLimpieza"><button class="btn" onclick="openPopup('limpieza')">Limpieza Energética</button></a>
-            <a href="#seccionTarot"><button class="btn" onclick="openPopup('tarot')">Tarot</button></a>
-            <a href="#seccionVelas"><button class="btn" onclick="openPopup('velas')">Velas Aromáticas</button></a>
+            <a href="#seccionLimpieza" class="btn">Limpieza Energética</a>
+            
+            <a href="#seccionTarot" class="btn">Tarot</a>
+            
+            <a href="#seccionVelas" class="btn">Velas Aromáticas</a>
+            
             
         </div>
     </div>
@@ -75,7 +79,7 @@
                 <div class="limpieza2">
                     <h2 style="color: #F3CA68;">Limpieza Energética</h2>
                     <br>
-                    <img src="IMAGEN/pendulo hebreo.img" alt="Imagen" width="500">
+                    <img src="/IMAGEN/pendulo_hebreo.png" alt="Imagen" width="500">
                 </div>
                     <div class="limpieza3">
                         <h3>La sesión de Limpieza energética es a distancia y
@@ -118,9 +122,13 @@
 
 
                 <!-- selecciones de carameleras  -->
+                <div class="carameleras">
                 <button class="btn" onclick="openPopup('Caramaelera1')">Caramelera Negra</button>
-                    <img src="">
+                    <img src="/IMAGEN/caramelera_negra_2.jpg" alt="Caramelera" width="200">
                 <button class="btn" onclick="openPopup('Caramaelera2')">Caramelera Transparente</button>
+                    <img src="/IMAGEN/caramelera1.jpg" alt="Caramelera" width="200">
+                </div>
+
             </div>
         </div>
     </section>  
@@ -135,51 +143,17 @@
     <footer>
         <!-- Falta completar los links y hacer botones correspondientes-->
         
-        <a href="/Templates/terminos y condiciones.html" class="botonFooter">Terminos y condiciones</a>
+        <a href="/Templates/terminosycondiciones.html" class="botonFooter">Terminos y condiciones</a>
         <a href="/Templates/preguntas.html" class="botonFooter">Preguntas Frecuentes </a>
-        <a href=""" class="botonFooter">Contactame </a>
+        <a href="/Limpiezaener.html" class="botonFooter">Contactame </a>
         
 
 
     </footer>
-    </body>
 
-    <script>
-        // Función para abrir la ventana emergente correspondiente
-        function openPopup(popupId) {
-            var popup = document.getElementById(popupId + '-popup');
-            popup.style.display = 'block';
-        }
-
-        // Función para cerrar la ventana emergente
-        function closePopup(popupId) {
-            var popup = document.getElementById(popupId + '-popup');
-            popup.style.display = 'none';
-        }
-
-        // Funciones adicionales según sea necesario
-
-        function showSearch() {
-            // Implementa la lógica para mostrar la barra de búsqueda
-            alert("Función de búsqueda aún no implementada");
-        }
-
-        function showLogin() {
-            // Implementa la lógica para mostrar la ventana de inicio de sesión
-            alert("Función de inicio de sesión aún no implementada");
-        }
-
-    
-            // Función para expandir el marco al pasar el cursor sobre el botón de usuario
-            function expandFrame() {
-                document.querySelector('.user-frame').style.width = '5px'; // Cambia el ancho del marco
-            }
-
-            // Función para colapsar el marco al quitar el cursor del botón de usuario
-            function collapseFrame() {
-                document.querySelector('.user-frame').style.width = '0'; // Restaura el ancho del marco
-            }
-        </script>
-   
+    <script src="/script.js">    </script>
 </body>
+
+
+   
 </html>

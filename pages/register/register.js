@@ -11,5 +11,5 @@ loginForm.addEventListener("submit", (e) => {
   console.log("Lastname:", lastname.value);
   console.log("Email:", email.value);
   console.log("Password:", password.value);
-  // process and send to API
+  // procesar y mandar a API
 });

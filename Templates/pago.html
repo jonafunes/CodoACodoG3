@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Light Energy - Terapias Holísticas - Pago</title>
         <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="/IMAGEN/LOGO.png" type="image/png">
+
     
 </head>
 <body>
@@ -14,21 +16,21 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Pago</h2>
+        <section class="popup-content contenedores">
+            <h2 class="aclaradores">Pago</h2>
             <form action="#" method="GET">
-                <div>
+                <div class="subtitulo">
                     <label for="">Nombre/s y Apellido/s</label>
                     <input type="text" name="firstname" id="firstname" placeholder="Por favor ingrese los datos como figuran en la tarjeta"required >
                      
                 </div>
                 <br>
-                <div>
+                <div class="subtitulo">
                     <label for="">DNI</label>
                     <input type="text" name="dni" id="dni" maxlength="8" required>
                 </div>
                 <br>
-                <div>
+                <div class="subtitulo">
                     <label for="">Tarjeta</label>
                     <select name="tarjeta" id="tarjeta" required>
                         <option value="">Seleccione</option>
@@ -39,29 +41,29 @@
                     </select>
                 </div>
                 <br>
-                <div>
+                <div class="subtitulo">
                     <label for="">Número de Tarjeta</label>
                     <input type="text" name="tnumber" id="tnumber" maxlength="16" required>
                 </div>
                 <br>
-                <div>
+                <div class="subtitulo">
                     <label for="cdate">Fecha de Vencimiento</label>
                     <input type="date" name="cdate" id="cdate">
                 </div>                
                 <br>
                 <br>
-                <div>
+                <div class="subtitulo">
                     <label for="">Código de Seguridad</label>
                     <input type="password" name="scode" id="scode">
                 </div>
                 <br>
-                <div>
+                <div class="subtitulo">
                    <ul>
                      <li>
-                        <a href="">Envío a Domicilio</a>
+                        <a href="" class="subtitulo">Envío a Domicilio</a>
                      </li>
                      <li>
-                         <a href="">Retiro en Local</a>
+                         <a href="" class="subtitulo">Retiro en Local</a>
                      </li>
                 </div>
                 
@@ -69,11 +71,24 @@
                 
                 <!-- boton de envio 
                 <input type="submit" value="Registrarse">-->
-                <button type="submit">
+                <button type="submit" class="btn">
                      Pagar
                 </button>
             </form>
         </section>
     </main>
+
+    <footer>
+        
+        <a href="/index.html" class="botonFooter">Pagina Principal</a>
+        <a href="/pages/register/" class="botonFooter">Registrate!</a>
+        <a href="/Templates/terminosycondiciones.html" class="botonFooter">Terminos y condiciones</a>
+        <a href="/Templates/preguntas.html" class="botonFooter">Preguntas Frecuentes </a>
+        <a href="/Limpiezaener.html" class="botonFooter">Contactame </a>
+
+        
+
+
+    </footer>
 </body>
 </html>
