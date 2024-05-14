@@ -7,9 +7,12 @@ loginForm.addEventListener("submit", (e) => {
   let email = document.getElementById("email");
   let password = document.getElementById("password");
 
+  
   console.log("Name:", name.value);
   console.log("Lastname:", lastname.value);
   console.log("Email:", email.value);
   console.log("Password:", password.value);
   // process and send to API
+
+  location.href ="/";
 });
