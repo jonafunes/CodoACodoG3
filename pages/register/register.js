@@ -12,4 +12,6 @@ loginForm.addEventListener("submit", (e) => {
   console.log("Email:", email.value);
   console.log("Password:", password.value);
   // procesar y mandar a API
+  
+  location.href ="/";
 });

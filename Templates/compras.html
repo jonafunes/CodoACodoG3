@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <img src="/IMAGEN/ImagenlogoR.jpg" alt="Logo" width="130">
         <nav>
             <h1>Light Energy - Terapias Holísticas</h1>
         </nav>
@@ -18,23 +19,22 @@
     <main>
         <section class="popup-content contenedores">
             <div class="aclaradores">
-            <h2 class="aclaradores">Compras</h2>
+            <h2 class="titleCompra">Compras</h2>
             <h3>Gracias por elegirnos!</h3>
             <p>Solo queda un paso para acceder a nuestro servicio.</p>
             <p>Por favor, completa el siguiente formulario para continuar.</p>
             </div>
             <br>
-            <form action="#" method="GET">
+            <form action="#" method="GET" style="width: 30%; gap:10px">
                 <div class="subtitulo">
                     <label for="">Nombre del producto</label>
-                    <input type="text" name="firstname" id="firstname" required>
+                    <input type="text" name="product" id="firstname" placeholder="Nombre del producto" required>
                 </div>
                 <br>
                 <div class="subtitulo">
                     <label for="">Cantidad</label>
                     <input type="number" name: "cant" id="cant">
                 </div>
-                         
                 <br>
                 <div class="subtitulo">
                     <label for="">Forma de pago</label>
@@ -54,7 +54,7 @@
                 </div>
                 <!-- boton de envio 
                 <input type="submit" value="Registrarse">-->
-                <button class="btn" type="pago">
+                <button class="btnCompra" type="pago">
                     <a href="./pago.html" class="subtitulo">Pagar</a>
                 </button>
             </form>

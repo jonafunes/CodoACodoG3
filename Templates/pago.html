@@ -11,14 +11,15 @@
 </head>
 <body>
     <header>
+        <img src="/IMAGEN/ImagenlogoR.jpg" alt="Logo" width="130">
         <nav>
             <h1>Light Energy - Terapias Holísticas</h1>
         </nav>
     </header>
     <main>
         <section class="popup-content contenedores">
-            <h2 class="aclaradores">Pago</h2>
-            <form action="#" method="GET">
+            <h2 class="titleCompra">Pago</h2>
+            <form action="#" method="GET" style="width: 30%;">
                 <div class="subtitulo">
                     <label for="">Nombre/s y Apellido/s</label>
                     <input type="text" name="firstname" id="firstname" placeholder="Por favor ingrese los datos como figuran en la tarjeta"required >
@@ -57,21 +58,16 @@
                     <input type="password" name="scode" id="scode">
                 </div>
                 <br>
-                <div class="subtitulo">
-                   <ul>
-                     <li>
-                        <a href="" class="subtitulo">Envío a Domicilio</a>
-                     </li>
-                     <li>
-                         <a href="" class="subtitulo">Retiro en Local</a>
-                     </li>
+                <div class="radioButtons">
+                    <input type="radio" name="envioADom" id="envioADom" class="opEnvio">Envío a Domicilio</input>
+                    <input type="radio" name="envioADom" id="envioADom" class="opEnvio">Retiro en Local</input>
                 </div>
                 
                 
                 
                 <!-- boton de envio 
                 <input type="submit" value="Registrarse">-->
-                <button type="submit" class="btn">
+                <button type="submit" class="btnPago">
                      Pagar
                 </button>
             </form>
