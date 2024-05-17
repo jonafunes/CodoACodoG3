@@ -39,7 +39,7 @@ function resetButtonColor(btnId, originalColor) {
 function showSearch() {
     try {
         // Intenta redirigir al usuario a la página de inicio de sesión en tu repositorio
-        window.location.href = "pages/search.html" //pagina de servicios de busqueda no realizada aun.
+        window.location.href = "./pages/search.html" //pagina de servicios de busqueda no realizada aun.
     } catch(error) {
     // Implementa la lógica para mostrar la barra de búsqueda
     alert("Función de búsqueda aún no implementada");
@@ -49,7 +49,7 @@ function showSearch() {
 function showLogin() {
     try {
     // Intenta redirigir al usuario a la página de inicio de sesión en tu repositorio
-        window.location.href = "pages/login/login.html"
+        window.location.href = "./pages/login/login.html"
     } catch(error) {
         // Si hay un error al intentar redirigir, muestra una alerta
         alert("No se pudo abrir la página de inicio de sesión: " + error);
@@ -59,7 +59,7 @@ function showLogin() {
 function showChart() {
     try {
     // Intenta redirigir al usuario a la página de inicio de sesión en tu repositorio
-        window.location.href = "Templates/compras.html"
+        window.location.href = "./Templates/compras.html"
     } catch(error) {
         // Si hay un error al intentar redirigir, muestra una alerta
         alert("No se pudo abrir la página de compras: " + error);
