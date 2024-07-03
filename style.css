@@ -626,3 +626,7 @@ header {
     border-color: #fff;
 }
 
+.userLoged{
+    display: flex;
+    justify-content: end;
+}
