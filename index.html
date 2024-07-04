@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Light Energy - Terapias Holísticas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="icon" href="./assets/LOGO.png" type="image/png">
 
 </head>
 
 <body>
-    <header id="volverArriba">
+    <header id="volverArriba" class="header">
         <!-- URL al logo -->
-        <img src="./assets/ImagenlogoR.jpg" alt="Logo" width="130">
-        <h1>Light Energy - Terapias Holísticas</h1>
+        <div class="header-logo">
+            <img src="./assets/ImagenlogoR.jpg" alt="Logo" height="60" width="60">
+            <h1 style="margin: 0px 10px;">Light Energy - Terapias Holísticas</h1>
+        </div>
+        <div class="header-logo">
+            <a href="#seccionLimpieza" class="btn-header">Limpieza Energética</a>
+            <a href="#seccionTarot" class="btn-header">Tarot</a>
+            <a href="#seccionVelas" class="btn-header">Velas Aromáticas</a>
+        </div>
         <div class="userLoged" style="display: none;">
             <p>Bienvenido</p>
+            <a onclick="logout()" style="color: #FFF;"><i class="fi fi-rr-exit icono"></i></a>
         </div>
     </header>
 
     <!-- Sección de selección en el costado izquierdo -->
-    
+
     <div class="side-selection">
-        <div class= "seccion izq principal">
+        <div class="seccion izq principal">
             <div>
-                <div class= "seccion secundaria">
-                    <div class= "tercera seccion" onclick="showSearch()">
+                <div class="seccion secundaria">
+                    <div class="tercera seccion" onclick="showSearch()">
                         <i class="fi fi-br-search icono"></i>
                     </div>
                 </div>
@@ -35,7 +45,7 @@
         </div>
         <div class="seccion izq principal">
             <div class="seccion secundaria">
-                <div class="tercera seccion" onclick= "showChart()" >
+                <div class="tercera seccion" onclick="showChart()">
                     <i class="fi fi-rr-shopping-cart icono"></i>
                     <!-- A realizar todavia <a href="#" onclick="showCart()"><i class="Carrito"></i></a> -->
                 </div>
@@ -52,28 +62,28 @@
             </div>
         </div>
         <br>
-        <a href="#volverArriba" class="">Volver Arriba</a> 
-        
+        <a href="#volverArriba" class="">Volver Arriba</a>
+
     </div>
-    
 
 
 
 
-    <!-- LISTADO DE BOTONES  -->
+
+    <!-- LISTADO DE BOTONES
     <div class="container">
         <div class="decorative-line"></div>
         <div class="side-buttons">
             <a href="#seccionLimpieza" class="btn">Limpieza Energética</a>
-            
+
             <a href="#seccionTarot" class="btn">Tarot</a>
-            
+
             <a href="#seccionVelas" class="btn">Velas Aromáticas</a>
-            
-            
+
+
         </div>
     </div>
-    <!-- Seccion principal de la pagina-->
+    Seccion principal de la pagina-->
 
     <section id="seccionLimpieza">
         <div id="limpieza-popup" class="popup">
@@ -83,23 +93,26 @@
                     <br>
                     <img src="./assets/pendulo_hebreo.png" alt="Imagen" width="500">
                 </div>
-                    <div class="limpieza3">
-                        <h3>La sesión de Limpieza energética es a distancia y
-                        tiene el fin de limpiar, cortar y liberar cualquier 
-                        energía negativa que estés cargando en tus cuerpos 
-                        mental, emocional, físico o etérico. Se realiza una 
-                        armonización y desbloqueo en los chakras y se trabaja 
-                        en el aura reparando y fortaleciendo. Al eliminar muchos 
-                        bloqueos de la persona, se suele conseguir trabajo si estaba 
-                        costando… mejorar en ámbitos familiares, de pareja, básicamente 
+                <div class="limpieza3">
+                    <h3>La sesión de Limpieza energética es a distancia y
+                        tiene el fin de limpiar, cortar y liberar cualquier
+                        energía negativa que estés cargando en tus cuerpos
+                        mental, emocional, físico o etérico. Se realiza una
+                        armonización y desbloqueo en los chakras y se trabaja
+                        en el aura reparando y fortaleciendo. Al eliminar muchos
+                        bloqueos de la persona, se suele conseguir trabajo si estaba
+                        costando… mejorar en ámbitos familiares, de pareja, básicamente
                         todo lo ENERGÉTICO se libera y comienza a estar mejor.</h3>
-                        <h3>La sesión la hago solo por la noche cuando tú estés durmiendo o estés relajado/a acostado/a. También recomiendo escuchar una 
-                        meditación guiada para poder estar más relajado/a y ayudar a 
-                        la limpieza, lo envío cuando pactamos turno. Luego al día 
-                        siguiente se envía un PDF con el informe final, explicando 
+                    <h3>La sesión la hago solo por la noche cuando tú estés durmiendo o estés relajado/a acostado/a.
+                        También recomiendo escuchar una
+                        meditación guiada para poder estar más relajado/a y ayudar a
+                        la limpieza, lo envío cuando pactamos turno. Luego al día
+                        siguiente se envía un PDF con el informe final, explicando
                         cómo estabas y con herramientas para acompañar la limpieza.</h3>
-                        <h3>Para poder seguir con la misma te pido que me envíes comprobante de pago, y nombre completo y fecha de nacimiento de la persona o las personas que van a recibir el servicio (el servicio es individual, pero puedes contratarlo para otra persona).</h3>
-                    </div>
+                    <h3>Para poder seguir con la misma te pido que me envíes comprobante de pago, y nombre completo y
+                        fecha de nacimiento de la persona o las personas que van a recibir el servicio (el servicio es
+                        individual, pero puedes contratarlo para otra persona).</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -119,35 +132,78 @@
             <div class="popup-content">
                 <h2 style="color: #F3CA68;">Velas Aromáticas</h2>
                 <!-- selecciones de carameleras  -->
-                <div class="carameleras">
-                <button class="btn" onclick="openPopup('Caramaelera1')">Caramelera Negra</button>
+                <div class="carameleras cards">
                     <img src="./assets/caramelera_negra_2.jpg" alt="Caramelera" width="200">
-                <button class="btn" onclick="openPopup('Caramaelera2')">Caramelera Transparente</button>
+                    <div class="carameleras body-cards">
+                        <p class="title-cards">
+                            Caramelera Negra
+                        </p>
+                        <p class="body-cards">
+                            Transforma tu espacio con las velas "Caramelera Negra", una joya de la aromaterapia diseñada
+                            para equilibrar y armonizar tu entorno.
+
+                            Sumérgete en un estado de serenidad con nuestras velas aromáticas, perfectas para tus
+                            prácticas de meditación y relajación. Con un diseño elegante en un sofisticado recipiente
+                            negro, estas velas no solo embellecen tu hogar, sino que también canalizan energías
+                            positivas, proporcionando un ambiente de paz y tranquilidad. Su aroma terapéutico, derivado
+                            de esencias naturales, ayuda a reducir el estrés y promover el bienestar integral. Elige
+                            "Caramelera Negra" para una experiencia holística completa y transforma cada rincón de tu
+                            hogar en un santuario de calma.
+                        </p>
+                        <button class="btn btn-compra" onclick="openPopup('Caramaelera1')">Comprar</button>
+                    </div>
+
+
+                </div>
+                <div class="carameleras cards">
                     <img src="./assets/caramelera1.jpg" alt="Caramelera" width="200">
+                    <div class="carameleras body-cards">
+                        <p class="title-cards">
+                            Caramelera Black
+                        </p>
+                        <p class="body-cards">
+                            Descubre el equilibrio perfecto entre estilo y bienestar con nuestras velas "Caramelera
+                            Black".
+
+                            Estas velas aromáticas están diseñadas para enriquecer tu práctica de terapia holística,
+                            ofreciendo un toque de lujo y una fuente de armonía. Encendidas, liberan un aroma envolvente
+                            que calma la mente y el espíritu, ideal para sesiones de yoga, reiki o meditación.
+                            Fabricadas con cera natural y presentadas en un elegante recipiente negro con diseños
+                            geométricos, no solo aportan belleza a tu espacio, sino que también promueven una combustión
+                            limpia y segura. Integra "Caramelera Black" en tus rituales diarios y crea un ambiente
+                            propicio para la introspección y el bienestar.
+                        </p>
+                        <button class="btn btn-compra" onclick="openPopup('Caramaelera2')">Comprar</button>
+                    </div>
                 </div>
 
             </div>
         </div>
-    </section>  
+    </section>
 
 
     <div class="popup-content contenedores">
         <h2 style="color: #F3CA68;">Gracias por visitar nuestra página web.</h2>
         <h2 style="color: #F3CA68; margin-top: 0px;">Te invitamos a darle play para relajarte</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/N73UWEsXKeU?si=jeQiKilgHlZyiNLt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p style="margin: 30px 80px 0px 80px; text-align: center;">Este video puede servirte para limpiar las malas energias del ambiente en el que estás buscando relajarte, podes utilizarlo cuando lo necesites, siempre lo vas a encontrar aquí</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N73UWEsXKeU?si=jeQiKilgHlZyiNLt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p style="margin: 30px 80px 0px 80px; text-align: center;">Este video puede servirte para limpiar las malas
+            energias del ambiente en el que estás buscando relajarte, podes utilizarlo cuando lo necesites, siempre lo
+            vas a encontrar aquí</p>
     </div>
 
-    
+
 
 
     <footer>
         <!-- Falta completar los links y hacer botones correspondientes-->
-        
+
         <a href="./Templates/terminosycondiciones.html" class="botonFooter">Terminos y condiciones</a>
         <a href="./Templates/preguntas.html" class="botonFooter">Preguntas Frecuentes </a>
         <a href="./Limpiezaener.html" class="botonFooter">Contactame </a>
-        
+
 
 
     </footer>
@@ -156,5 +212,5 @@
 </body>
 
 
-   
+
 </html>

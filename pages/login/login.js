@@ -4,13 +4,7 @@ let loginForm = document.querySelector(".my-form");
 
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  let email = document.getElementById("email");
-  let password = document.getElementById("password");
-
-  console.log("Email:", email.value);
-  console.log("Password:", password.value);
-  // procesas y mandar a API
-  login()
+  login();
 });
 
 /**
@@ -40,29 +34,28 @@ async function fetchData(url, method, data = null) {
   }
 }
 
-
 /**
- * Function para loguearse 
+ * Función para loguearse
  */
-async function login(){
-  //Buscamos en el servidor la cuenta
-  const email = document.getElementById("email");
-  const password = document.getElementById("password");
-  const body = {email: email.value, password: password.value}
+async function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const body = { email: email, password: password };
 
-  console.log(body)
+    let response = await fetchData(`${BASEURL}/api/login`, 'POST', body);
 
-  let response = await fetchData(`${BASEURL}/api/login`, 'POST', body);
-  if(response.message === 'Authenticated'){
-    localStorage.setItem('auth', true)
-    localStorage.setItem('user', email)
-    window.location.href('/')
-  } else {
-    Swal.fire({
-      title: 'Error!',
-      text: response.message,
-      icon: 'error',
-      confirmButtonText: 'Cerrar'
-    })
-  }
+    if (response.message === 'Authenticated') {
+      localStorage.setItem('auth', 'true');
+      localStorage.setItem('email', response.user.email);
+      localStorage.setItem('name', response.user.name);
+      console.log(response)
+      window.location.href = '/';
+    } else {
+      Swal.fire({
+        title: 'Error!',
+        text: response.message,
+        icon: 'error',
+        confirmButtonText: 'Cerrar'
+      });
+    }
 }

@@ -31,6 +31,18 @@ h3 {
     margin: 15px;
 }
 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .icono{
     fill: currentColor
 }
@@ -91,8 +103,31 @@ span {
 
 .carameleras {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+}
+
+.cards {
+    background: #312444;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.body-cards{
+    flex-direction: column;
+    margin: 0px 20px;
+    text-transform: math-auto;
+    font-family: system-ui;
+    line-height: 20px;
+}
+
+.title-cards{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.btn-compra{
+    font-weight: bold;
 }
 
 .contenedores {
@@ -351,6 +386,22 @@ header {
     /* Transiciones para el color de fondo y texto */
 }
 .btn:hover {
+    background-color: rgb(243, 202, 104); /* Cambio a color dorado al pasar el mouse */
+    color: #270e4b; /* Cambio a color oscuro para el texto */
+}
+
+.btn-header{
+    display: block;
+    color: rgb(243, 202, 104);
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    margin: 0px 10px;
+}
+
+.btn-header:hover {
     background-color: rgb(243, 202, 104); /* Cambio a color dorado al pasar el mouse */
     color: #270e4b; /* Cambio a color oscuro para el texto */
 }
@@ -629,4 +680,7 @@ header {
 .userLoged{
     display: flex;
     justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }

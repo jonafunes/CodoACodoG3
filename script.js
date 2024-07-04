@@ -1,4 +1,8 @@
 const BASEURL = 'http://127.0.0.1:5000';
+
+document.addEventListener('DOMContentLoaded', () => {
+    isLogued();
+  });
 /**
  * Función para realizar una petición fetch con JSON.
  * @param {string} url - La URL a la que se realizará la petición.
@@ -28,15 +32,25 @@ async function fetchData(url, method, data = null) {
 
 
 function isLogued(){
-    const isLogued = localStorage.getItem(auth)
-    const user = localStorage.getItem(user)
+    const isLogued = localStorage.getItem('auth')
+    const name = localStorage.getItem('name')
     userLogedDiv = document.querySelector('.userLoged');
+    logoutDiv = document.querySelector('.logoutDiv');
     if (isLogued){
-        userLogedDiv.style.display = 'block';
-        userLogedDiv.innerHTML = '<p>Bienvenido,'+user+'</p>';
+        userLogedDiv.style.display = 'flex';
+        userLogedDiv.innerHTML = '<p>Bienvenido, '+name+'</p><br/><a onclick="logout()" style="color: #FFF;"><i class="fi fi-rr-exit icono"></i></a>';
+        logoutDiv.style.display = 'flex';
     } else {
         userLogedDiv.style.display = 'none';
     }
+}
+
+function logout(){
+    localStorage.removeItem('auth')
+    localStorage.removeItem('name')
+    localStorage.removeItem('email')
+    userLogedDiv = document.querySelector('.userLoged');
+    userLogedDiv.style.display = 'none';
 }
 // Función para expandir el marco al pasar el cursor sobre el botón de usuario
 function expandFrame() {

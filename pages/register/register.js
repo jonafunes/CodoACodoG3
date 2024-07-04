@@ -54,19 +54,19 @@ async function register(){
   const lastname = document.getElementById("lastname");
   const email = document.getElementById("email");
   const password = document.getElementById("password");
-  const body = {nombre: name.value, apellido: lastname.value,email: email.value, password: password.value}
+  const body = {name: name.value, lastname: lastname.value,email: email.value, password: password.value}
 
   console.log(body)
 
   let response = await fetchData(`${BASEURL}/api/register`, 'POST', body);
-  if(response.message === 'Usuario creada con exito'){
+  if(response.message === 'Registred'){
     Swal.fire({
       title: 'Perfecto!',
       text: response.message,
       icon: 'success',
       confirmButtonText: 'Cerrar'
     })
-    window.location.href('/login')
+    window.location.href='/pages/login/login.html';
   } else {
     Swal.fire({
       title: 'Error!',
